@@ -1,0 +1,115 @@
+{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+.jumbotron{
+	background-image:url( "weather.jpg");
+	
+	
+}
+
+body{
+	padding:50px;
+	height: 100vh;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items: center;
+	background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color:white;
+}
+.info1 ,
+.info2,
+.info3,
+.info4,
+.info5,
+.info6{
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding:3px;
+	color:white;
+}
+
+.location,
+.temperature{
+	height: 20vh;
+	width:50%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.temperature{
+	flex-direction: column;
+
+}
+.degree-section{
+	display:flex;
+	align-items: center;
+	cursor:pointer;
+}
+.degree-section span{
+	font-size: 30px;
+	margin:10px;
+	color:white;
+
+}
+.degree-section h2{
+	font-size: 40px;
+	color:white;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+background: #F3904F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  transition: 0.3s;
+  flex-direction: column;
+  align-items: center;
+  display:flex;
+  padding-bottom: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 100px;
+  perspective: 1000px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   
+}
+
+.flipS-card-inner {
+
+  background-color: transparent;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.cardS:hover  {
+  transform: rotateY(180deg);
+}
+
+.flipS-card-front, .flip-card-back {
+
+	-webkit-backface-visibility: hidden; /* Safari */
+     backface-visibility: hidden;
+}
+/* Style the back side */
+.flipS-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
